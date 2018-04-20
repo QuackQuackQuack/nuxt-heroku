@@ -1,11 +1,3 @@
-// module.exports = {
-//   buildDir: '../.nuxt/',
-//   build: {
-//     extractCSS: true
-//   }
-// }
-//
-//
 module.exports = {
   /*
   ** Headers of the page
@@ -21,7 +13,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  //buildDir: '../server/.nuxt/',
+  modules: [
+    '@nuxtjs/axios',
+  ],
+  build: {
+    extractCSS: true
+  }
   /*
   ** Global CSS
   */
