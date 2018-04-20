@@ -1,0 +1,18 @@
+{
+  "name": "nuxtheroku",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd src && yarn run dev",
+    "compile": "yarn delete && yarn build && yarn copy && yarn copystatic",
+    "start": "firebase serve --only functions,hosting -p 5004",
+    "deploy": "firebase deploy",
+    "setup": "yarn install-functions  && yarn install-nuxt",
+    "build": "cd src && yarn run build",
+    "delete": "rimraf public && rimraf functions/nuxt",
+    "copy": "ncp src/app functions/nuxt && ncp src/app/dist public",
+    "install-functions": "cd functions && yarn",
+    "install-nuxt": "cd src && yarn",
+    "copystatic": "cp -R src/static/ public"
+  }
+}
