@@ -79,11 +79,11 @@ const exData = {
 
 const CartExampleData = Object.assign({}, navigationData, exData)
 
-router.get('/api/', (req,res) => {
+router.get('/', (req,res) => {
   res.send(navigationData);
 });
 
-router.get('/api/cart', (req,res) => {
+router.get('/cart', (req,res) => {
   res.send(CartExampleData);
 });
 
