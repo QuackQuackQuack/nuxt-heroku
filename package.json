@@ -6,6 +6,7 @@
     "dev": "backpack dev",
     "build": "nuxt build && backpack build",
     "build:nuxt": "nuxt build",
+    "heroku-postbuild": "yarn build",
     "start": "cross-env NODE_ENV=production node build/main.js"
   },
   "engines": {
