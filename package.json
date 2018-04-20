@@ -16,6 +16,9 @@
     "copystatic": "cp -R src/static/ public"
   },
   "engines": {
-    "yarn": "1.4.0"
+    "yarn": "^1.4.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
