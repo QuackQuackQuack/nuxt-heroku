@@ -9,9 +9,5 @@
   "private": true,
   "dependencies": {
     "nuxt": "^1.4.0"
-  },
-  "engines": {
-    "node": "8.9.4",
-    "yarn": "^1.4.0"
   }
 }

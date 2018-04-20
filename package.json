@@ -14,5 +14,8 @@
     "install-functions": "cd functions && yarn",
     "install-nuxt": "cd src && yarn",
     "copystatic": "cp -R src/static/ public"
+  },
+  "engines": {
+    "yarn": "1.4.0"
   }
 }
