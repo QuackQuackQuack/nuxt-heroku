@@ -17,9 +17,15 @@ module.exports = {
     ]
   },
   modules: [
-    //'@nuxtjs/pwa',
+    '@nuxtjs/pwa',
     '@nuxtjs/axios',
   ],
+  axios: {
+    baseURL: 'https://quackquackquack.herokuapp.com/',
+    browserBaseURL: 'http://localhost:3000/',
+    credentials: false,
+    debug: false,
+  },
   plugins: [
     { src: '~/plugins/localStorage.js', ssr: false },
     { src: '~plugins/vuetify.js'},
