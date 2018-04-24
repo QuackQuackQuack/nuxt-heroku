@@ -3,7 +3,12 @@
 **/node_modules
 
 #log
-
 *.log
+
+
+#build
 /.nuxt
 /build
+
+#Ds_Store
+.DS_Store

@@ -14,11 +14,20 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/pwa": "^2.0.8",
     "express": "^4.16.3",
-    "nuxt": "^1.4.0"
+    "lodash": "^4.17.5",
+    "nuxt": "^1.4.0",
+    "vue": "^2.5.16",
+    "vuetify": "^1.0.16",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.2"
   },
   "devDependencies": {
     "backpack-core": "^0.7.0",
-    "cross-env": "^5.1.4"
+    "cross-env": "^5.1.4",
+    "path": "^0.12.7",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
   }
 }

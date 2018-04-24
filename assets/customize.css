@@ -1,0 +1,70 @@
+.cart-button {
+  position:relative;
+}
+.cart-button .cart-quantity {
+  position:absolute;
+  width:36px;
+  top:11px;
+  color:#1564c0;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+}
+.cart-button .icon {
+  font-size:38px;
+}
+
+/* list */
+.card-thumb {
+  position: relative;
+}
+.card-thumb .hover-image {
+  display:none;
+}
+
+.card-thumb:hover > .main-image {
+  display: none;
+}
+
+.card-thumb:hover > .hover-image {
+  display: flex;
+}
+
+.v-card-title {
+  width:100%;
+}
+
+.unit {
+  font-size:11px;
+}
+
+.v-card-list-button-area {
+  padding:0px 16px 10px 0px;
+  margin-top:-30px;
+  text-align:right;
+}
+
+/* Cart */
+.cart .cart-remove-wrap {padding:20px 10px;text-align:right;}
+.cart .cart-remove-wrap button {color:#888;text-decoration:underline;}
+.cart .cart-list {padding:0px 10px}
+.cart .cart-list li {margin-bottom:20px;}
+.cart .cart-list li:last-child {margin-bottom:0px;}
+.cart .cart-list .cart-item .thumb {float:left;width:120px;height:120px;border:1px solid #f1f1f1;}
+.cart .cart-list .cart-item .thumb img {width:100%;}
+.cart .cart-list .cart-item .detail {overflow:hidden;position:relative;height:120px;padding:0px 0px 0px 15px;}
+.cart .cart-list .cart-item .detail .prod-title {font-size:14px;}
+.cart .cart-list .cart-item .detail .color {margin-top:3px;font-size:12px;color:#888}
+.cart .cart-list .cart-item .detail .size {margin-top:3px;font-size:12px;}
+.cart .cart-list .cart-item .detail .quantity {display:inline-block;width:30px;text-align:center;}
+.cart .cart-list .cart-item .detail .select {font-size:12px;}
+.cart .cart-list .cart-item .detail .select .btn {margin:0px;}
+.cart .cart-list .cart-item .detail .select button i {color:#888 !important;font-size:18px}
+.cart .cart-list .cart-item .detail .price-area {font-size:12px;}
+.cart .cart-list .cart-item .detail .price-area .price {margin-right:8px;}
+.cart .cart-list .cart-item .detail .price-area button {color:#888;text-decoration:underline;}
+.cart .total {left:0px;right:0px;bottom:0px;margin-top:20px;padding:0px 16px;font-size:14px;border-top:1px solid #e0e0e0;background-color:#fff}
+.cart .total dt {float:left;width:40%;height:40px;line-height:40px;color:#999}
+.cart .total dd {overflow:hidden;width:60%;height:40px;text-align:right;line-height:40px;color:#000}
+.cart .total .check-wrap {padding:15px 0px;border-top:1px solid #e0e0e0;}
+.cart .total .check-wrap > button {display:block;width:100%;height:40px;background-color:#448aff;color:#fff;font-weight:400;font-size:16px;}

@@ -1,22 +1,13 @@
 <template>
-  <ul class="users">
-    <li v-for="(navigation, index) in data.navigation" :key="index" >
-      {{navigation.content}}
-    </li>
-  </ul>
+  <div>
+    <div>Hello Vue Example</div>
+  </div>
 </template>
 
 <script>
 export default {
-  async asyncData({ app }) {
-    const data = await app.$axios.$get('/api')
-    return { data }
-  }
+  async asyncData ( { store, params, error, req }) {
+    await store.dispatch('getIntData', { url: '/api', type: ''});
+  },
 }
 </script>
-
-<style>
-.red {
-  color: red;
-}
-</style>
