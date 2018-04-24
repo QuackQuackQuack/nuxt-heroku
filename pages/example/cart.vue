@@ -18,14 +18,6 @@ export default {
   components: { AppCard },
   async asyncData ( { store, params, error, req }) {
     await store.dispatch('getIntData', { url: '/api/cart', type: ''});
-  },
-  methods: {
-    getImage () {
-      const min = 550
-      const max = 560
-
-      return Math.floor(Math.random() * (max - min + 1)) + min
-    }
   }
 }
 </script>

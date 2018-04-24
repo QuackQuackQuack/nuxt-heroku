@@ -21,8 +21,7 @@ module.exports = {
     '@nuxtjs/axios',
   ],
   axios: {
-    baseURL: 'https://quackquackquack.herokuapp.com/',
-    browserBaseURL: 'http://localhost:3000/',
+    baseURL: process.env.BASE_URL || 'http://localhost:5000',
     credentials: false,
     debug: false,
   },
