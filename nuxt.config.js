@@ -5,7 +5,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'starter',
+    title: 'Vue',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,9 +22,8 @@ module.exports = {
     '@nuxtjs/axios',
   ],
   axios: {
-    baseURL: process.env.BASE_URL || 'https://quackquackquack.herokuapp.com/',
-    // credentials: false,
-    debug: true,
+    baseURL: process.env.NODE_ENV === 'production' ? 'https://quackquackquack.herokuapp.com/' : 'http://localhost:3000/',
+    debug: process.env.NODE_ENV === 'production' ? false : true,
   },
   plugins: [
     { src: '~/plugins/localStorage.js', ssr: false },

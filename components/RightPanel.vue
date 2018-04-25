@@ -11,7 +11,6 @@
 import Cart from '.././components/Cart.vue'
 import { mapGetters } from 'vuex'
 
-
 export default {
   components: {
     Cart
@@ -28,25 +27,3 @@ export default {
   },
 }
 </script>
-
-
-
-
-  <!-- computed: {
-    getCartquantity() {
-      return this.$store.getters.cartQuantity;
-    }
-  },
-  watch: {
-    getCartquantity(val) {
-      // if cart item 0, close
-      if (val === 0) {
-        this.showCart = false;
-      }
-
-      if (val === 1) {
-        this.showCart = true;
-      }
-    }
-  }
-} -->

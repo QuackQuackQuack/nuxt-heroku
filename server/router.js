@@ -5,7 +5,7 @@ const navigationData = {
   navigation: [
     // { icon: 'shopping cart', title: 'ShoppingCart Example', path: '/'},
     // { icon: 'history', title: 'Frequently contacted', path: '/text' },
-    // { icon: 'content_copy', title: 'Duplicates', path: '/12345'},
+    { icon: 'home', title: 'Home', path: '/'},
     {
       icon: 'assignment',
       title: 'Example',

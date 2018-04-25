@@ -58,19 +58,3 @@ export default {
   }
 }
 </script>
-
-
-<!-- { icon: 'contacts', text: '나이스샷111', path: '/'},
-{ icon: 'history', text: 'Frequently contacted', path: '/text' },
-{ icon: 'content_copy', text: 'Duplicates', path: '/'},
-{
-  icon: 'keyboard_arrow_up',
-  'icon-alt': 'keyboard_arrow_down',
-  text: 'Example',
-  model: true,
-  path: '/',
-  children: [
-    { icon: 'add', text: 'Cart Example' }
-  ]
-}
-], -->

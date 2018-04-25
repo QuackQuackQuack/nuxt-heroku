@@ -15,19 +15,22 @@
 import AppCard from '@/components/Card'
 
 export default {
+  data () {
+    return {
+      title: 'dasadsads'
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'cart', name: '설명', content: '내가 커스텀한 설명' }
+      ]
+    }
+  },
   components: { AppCard },
   async asyncData ( { store, params, error, req }) {
     await store.dispatch('getIntData', { url: '/api/cart', type: ''});
   }
 }
 </script>
-
-// export default {
-
-// }
-
-<style>
-.red {
-  color: red;
-}
-</style>
