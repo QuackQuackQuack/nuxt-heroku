@@ -21,11 +21,11 @@ module.exports = {
     '@nuxtjs/proxy',
     '@nuxtjs/axios',
   ],
-  // axios: {
-  //   // baseURL: process.env.BASE_URL || 'http://localhost:3000',
-  //   // credentials: false,
-  //   // debug: false,
-  // },
+  axios: {
+    baseURL: process.env.BASE_URL || 'http://localhost:1000',
+    // credentials: false,
+    debug: true,
+  },
   plugins: [
     { src: '~/plugins/localStorage.js', ssr: false },
     { src: '~plugins/vuetify.js'},
