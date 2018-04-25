@@ -6,6 +6,7 @@
     "dev": "backpack dev",
     "build": "cross-env NODE_ENV=production nuxt build && backpack build",
     "build:nuxt": "nuxt build",
+    "generate": "nuxt generate",
     "heroku-postbuild": "yarn build",
     "start": "cross-env NODE_ENV=production node build/main.js"
   },
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/proxy": "^1.2.4",
     "@nuxtjs/pwa": "^2.0.8",
     "express": "^4.16.3",
     "lodash": "^4.17.5",
