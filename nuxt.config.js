@@ -22,7 +22,7 @@ module.exports = {
     '@nuxtjs/axios',
   ],
   axios: {
-    baseURL: process.env.BASE_URL || 'http://localhost:1000',
+    baseURL: process.env.BASE_URL || 'https://quackquackquack.herokuapp.com/',
     // credentials: false,
     debug: true,
   },
