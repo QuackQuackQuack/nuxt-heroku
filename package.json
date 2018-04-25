@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "backpack dev",
     "build": "cross-env NODE_ENV=production nuxt build && backpack build",
+    "build:dev": "cross-env NODE_ENV=dev nuxt build && backpack build",
     "build:nuxt": "nuxt build",
     "generate": "nuxt generate",
     "heroku-postbuild": "yarn build",
