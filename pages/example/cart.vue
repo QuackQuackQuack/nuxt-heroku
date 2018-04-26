@@ -1,6 +1,5 @@
 <template>
   <section>
-    <div>3123123</div>
     <v-container fluid grid-list-lg>
       <v-subheader>{{ $store.state.initialData.product.title }}</v-subheader>
       <v-layout row wrap>
