@@ -13,7 +13,6 @@ export default {
   UPDATE_RIGHT_PANEL(state, payLoad) {
     state.panel.right = payLoad;
   },
-
   GET_INIT_DATA(state, payLoad){
     state.initialData = payLoad;
   },

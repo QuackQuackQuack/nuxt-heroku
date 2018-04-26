@@ -16,5 +16,10 @@ import AppLeftPanel from '@/components/LeftPanel'
 import AppRightPanel from '@/components/RightPanel'
 export default {
   components: { AppHeader, AppLeftPanel, AppRightPanel },
+  head () {
+    return {
+      title: 'Test',
+    }
+  }
 }
 </script>

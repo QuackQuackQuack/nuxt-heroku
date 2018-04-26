@@ -1,5 +1,6 @@
 <template>
   <section>
+    <div>3123123</div>
     <v-container fluid grid-list-lg>
       <v-subheader>{{ $store.state.initialData.product.title }}</v-subheader>
       <v-layout row wrap>
@@ -13,11 +14,14 @@
 
 <script>
 import AppCard from '@/components/Card'
-
 export default {
+  name: 'Cart',
+  head: {
+    title: 'Cart'
+  },
   components: { AppCard },
   async asyncData ( { store, params, error, req }) {
     await store.dispatch('getIntData', { url: '/api/cart', type: ''});
-  }
+  },
 }
 </script>

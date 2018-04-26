@@ -5,27 +5,27 @@ const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 3000
 const app = express();
 
-async function start() {
-  let config = require('../nuxt.config.js')
-  config.dev = !(process.env.NODE_ENV === 'production')
+app.set('port', port)
 
-  const nuxt = new Nuxt(config)
+// Import API Routes
+app.use('/api', router)
 
-  if (config.dev) {
-    const builder = new Builder(nuxt)
-    builder.build()
-  }
-  app.use('/api/', router);
+// Import and Set Nuxt.js options
+let config = require('../nuxt.config.js')
+config.dev = !(process.env.NODE_ENV === 'production')
 
-  function handleRequest(req, res) {
-    res.set('Cache-Control', 'public, max-age=150, s-maxage=150');
-    return new Promise((resolve, reject) => {
-      nuxt.render(req, res, promise => {
-        promise.then(resolve).catch(reject)
-      })
-    });
-  }
-  app.get('**', handleRequest)
-  app.listen(port, host)
+// Init Nuxt.js
+const nuxt = new Nuxt(config)
+
+// Build only in dev mode
+if (config.dev) {
+  const builder = new Builder(nuxt)
+  builder.build()
 }
-start()
+
+// Give nuxt middleware to express
+app.use(nuxt.render)
+
+// Listen the server
+app.listen(port, host)
+console.log('Server listening on ' + host + ':' + port)

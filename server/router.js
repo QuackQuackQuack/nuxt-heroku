@@ -3,8 +3,6 @@ const router = express.Router();
 
 const navigationData = {
   navigation: [
-    // { icon: 'shopping cart', title: 'ShoppingCart Example', path: '/'},
-    // { icon: 'history', title: 'Frequently contacted', path: '/text' },
     { icon: 'home', title: 'Home', path: '/'},
     {
       icon: 'assignment',
@@ -82,11 +80,11 @@ const exData = {
 const CartExampleData = Object.assign({}, navigationData, exData)
 
 router.get('/', (req,res) => {
-  res.send(navigationData);
+  res.json(navigationData);
 });
 
 router.get('/cart', (req,res) => {
-  res.send(CartExampleData);
+  res.json(CartExampleData);
 });
 
 
