@@ -7,5 +7,12 @@ Vue.mixin({
     displayCommas(num){
       return String(num).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,');
     },
+    currentPath(path) {
+      if (this.$store.state.currentPath === path) {
+        return true
+      } else {
+        return false;
+      }
+    }
   }
 })

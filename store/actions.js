@@ -47,4 +47,7 @@ export default {
   toggleRightPanel({commit}) {
     commit('TOGGLE_RIGHT_PANEL');
   },
+  currentPath({commit}, payLoad) {
+    commit('CURRENT_PATH', payLoad)
+  }
 }

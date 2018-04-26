@@ -21,6 +21,7 @@ export default {
   },
   components: { AppCard },
   async asyncData ( { store, params, error, req }) {
+    await store.dispatch('currentPath', req.url);
     await store.dispatch('getIntData', { url: '/api/cart', type: ''});
   },
 }

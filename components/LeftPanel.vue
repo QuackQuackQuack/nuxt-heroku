@@ -12,7 +12,7 @@
                 <v-list-tile-title>{{ item.title }}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
-            <v-list-tile :href="child.path" v-for="(child, i) in item.children" :key="i" @click="test">
+            <v-list-tile :href="child.path" v-for="(child, i) in item.children" :key="i" @click="panelContorl" :value="currentPath(child.path)">
               <v-list-tile-action v-if="child.icon">
                 <v-icon>{{ child.icon }}</v-icon>
               </v-list-tile-action>
@@ -21,7 +21,7 @@
               </v-list-tile-content>
             </v-list-tile>
           </v-list-group>
-          <v-list-tile v-else @click="test" :key="item.title" :href="item.path">
+          <v-list-tile v-else @click="panelContorl" :key="item.title" :href="item.path" :value="currentPath(item.path)">
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
@@ -51,9 +51,12 @@ export default {
     }
   },
   methods: {
-    test() {
+    panelContorl() {
       this.$store.commit('UPDATE_RIGHT_PANEL', false)
       this.$store.commit('UPDATE_LEFT_PANEL', false)
+    },
+    test() {
+      console.log('dasds');
     }
   }
 }

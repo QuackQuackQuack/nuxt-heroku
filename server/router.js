@@ -4,6 +4,7 @@ const router = express.Router();
 const navigationData = {
   navigation: [
     { icon: 'home', title: 'Home', path: '/'},
+    { icon: 'home', title: 'Test', path: '/test'},
     {
       icon: 'assignment',
       title: 'Example',

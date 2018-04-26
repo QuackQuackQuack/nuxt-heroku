@@ -12,6 +12,7 @@ export default {
     title: 'Index'
   },
   async asyncData ( { store, params, error, req }) {
+    await store.dispatch('currentPath', req.url);
     await store.dispatch('getIntData', { url: '/api/', type: ''});
     return {
       renderSource: process.static ? 'static' : (process.server ? 'server' : 'client')

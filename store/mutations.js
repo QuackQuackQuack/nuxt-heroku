@@ -32,10 +32,13 @@ export default {
     state.cart[data.targetIndex].quantity += data.quantity;
   },
   REMOVE_CART(state, payLoad){
-    var carts = state.cart
+    var carts = state.cart;
     carts.splice(carts.indexOf(payLoad), 1);
   },
   CLEAR_CART(state){
     state.cart = [];
   },
+  CURRENT_PATH(state, payLoad) {
+    state.currentPath = payLoad;
+  }
 }
