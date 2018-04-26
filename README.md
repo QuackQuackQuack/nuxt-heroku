@@ -1,6 +1,6 @@
-# Nuxt SSR - Heroku
+# Nuxt SSR with Express - Heroku
 
-> nuxt heroku with axios, vuex, vuetify project
+> nuxt with Express axios, vuex, vuetify at heroku project
 
 ## Build Setup
 
